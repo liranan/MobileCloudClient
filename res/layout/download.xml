@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/downfilename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="下载文件"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="文件保存路径:" />
+
+    <EditText
+        android:id="@+id/saveDir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="/sdcard/" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/downbutton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/downbutton" />
+
+        <Button
+            android:id="@+id/downfinish"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="完成" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/downloadbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20px" />
+
+    <TextView
+        android:id="@+id/downresult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+</LinearLayout>
